@@ -1,0 +1,58 @@
+html {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 1000px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.about {
+  color: #e9ebee;
+  background: #233556;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about img {
+  height: 400px;
+  width: auto;
+}
+
+.about section {
+  align-self: center;
+  color: black;
+  background: white;
+  padding: 15px;
+  height: 300px;
+  max-width: 600px;
+  display: flex;
+  flex-flow: column;
+}
+
+.about-links {
+  align-self: end;
+}
+
+.about-links img {
+  height: 30px;
+}
+
+.work {
+  padding: 30px;
+}
+
+.contact {
+  padding: 30px;
+  color: #e9ebee;
+  background: #233556;
+}
