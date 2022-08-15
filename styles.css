@@ -40,7 +40,8 @@ h1 {
 }
 
 .about-links {
-  align-self: end;
+  align-self: flex-end;
+  margin-top: auto;
 }
 
 .about-links img {
@@ -49,6 +50,60 @@ h1 {
 
 .work {
   padding: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 50px;
+}
+
+.work h1 {
+  padding-bottom: 15px;
+}
+
+.project {
+  display: flex column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: max-content;
+}
+
+.project img {
+  width: 300px;
+  height: 200px;
+  object-fit: fill;
+}
+
+.info-panel {
+  display: flex;
+  align-items: center;
+}
+
+.info-panel p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  padding: 15px;
+}
+
+.project-links-container {
+  padding-right: 20px;
+  margin-left: auto;
+}
+
+.project-links-container img {
+  height: 20px;
+  width: auto;
+  padding-left: 5px;
+}
+
+.project-description {
+  margin: 0;
+  padding: 0 15px 15px 15px;
+  display: block;
+  width: 200px;
+  height: auto;
+  overflow-wrap: break-word;
 }
 
 .contact {
