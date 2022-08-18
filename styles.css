@@ -22,12 +22,12 @@ h1 {
   margin: 0;
 }
 
-.blue-div {
+.top-deco {
   height: 320px;
   width: 1800px;
   position: absolute;
   transform: rotate(-10deg) translatey(-220px) translatex(-30px);
-  background: #233556;
+  background: #9f4e4c;
   z-index: -1;
 }
 
@@ -154,7 +154,7 @@ h1 {
 }
 
 .contact-container {
-  background: #233556;
+  background: #9f4e4c;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -205,7 +205,7 @@ h1 {
 }
 
 .contact-links {
-  padding: 20px 0;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -228,8 +228,17 @@ h1 {
 }
 
 @media (min-width: 601px) {
-  .nikki-outside {
+  .img-container picture  {
     height: 300px;
+    width: auto;
+  }
+
+  .my-name {
+
+  }
+
+  .about section {
+
   }
 }
 
