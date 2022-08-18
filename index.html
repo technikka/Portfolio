@@ -9,93 +9,109 @@
   </head>
 
   <body>
+    <div class="page-container">
 
-    <div class="about">
-      <img src="assets/placeholder1.jpg" alt="stock image of professional woman on her laptop">
-      <section>
-        <h1>About Me</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum harum vitae repellendus in quibusdam tenetur dignissimos totam? Autem quibusdam sapiente exercitationem nesciunt cum eos iure aspernatur ipsam dolor. Praesentium, pariatur.
-        </p>
-        <div class="about-links">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt=""/>
-        </div>
-      </section>
-    </div>
-
-    <div class="work">
-      <h1>My Work</h1>
-
-      <div class="projects-container">
-        <section class="project">
-          <img src="assets/pp-zoom-3-2.jpg" alt="screenshot of people pages newsfeed.">
-          <div class="info-panel">
-            <p>People Pages</p>
-            <div class="project-links-container">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/>
-              <img src="assets/open-in-new.svg" alt="">
-            </div>
+      <div class="side-panel-left"></div>
+      <div class="blue-div"></div>
+      <div class="side-panel-right"></div>
+      <div class="about">
+        <picture>
+          <source media="(max-width: 600px)" srcset="assets/nikki-outside-crop-tall.jpeg">
+          <source media="(min-width: 601px)" srcset="assets/nikki-outside-crop-square.jpeg">
+          <img src="nikki-outside-crop-square.jpeg" alt="Nikki standing outside and smiling into the camera" class="nikki-outside">
+        </picture>
+        <section>
+          <h1>About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum harum vitae repellendus in quibusdam tenetur dignissimos totam? Autem quibusdam sapiente exercitationem nesciunt cum eos iure aspernatur ipsam dolor. Praesentium, pariatur.
+          </p>
+          <div class="about-links">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt=""/>
           </div>
-          <p class="project-description">A social platform mimicking the core user functionality of Facebook: users, profiles, posts, newsfeed, "friending", and "liking".</p>
         </section>
+      </div>
   
-        <section class="project">
-          <img src="assets/chess-zoom-3-2.jpg" alt="screenshot of chess in my terminal.">
-          <div class="info-panel">
-            <p>Chess</p>
-            <div class="project-links-container">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/>
-              <img src="assets/open-in-new.svg" alt="">
+      <div class="work">
+        <h1>My Work</h1>
+  
+        <div class="projects-container">
+          <section class="project">
+            <img src="assets/pp-zoom-3-2.jpg" alt="screenshot of people pages newsfeed.">
+            <div class="info-panel">
+              <p>People Pages</p>
+              <div class="project-links-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/>
+                <img src="assets/open-in-new.svg" alt="">
+              </div>
             </div>
-          </div>
-          <p class="project-description">A command line Chess game where two players can play against each other. Follows common rules and implements special moves 'en passant' and 'castling'.</p>
-        </section>
-
-        <section class="project">
-          <img src="assets/admin-dashboard-zoom-3-2.jpg" alt="screenshot of project.">
-          <div class="info-panel">
-            <p>Admin Dashboard</p>
-            <div class="project-links-container">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/>
-              <img src="assets/open-in-new.svg" alt="">
+            <p class="project-description">A social platform mimicking the core user functionality of Facebook: users, profiles, posts, newsfeed, "friending", and "liking".</p>
+          </section>
+    
+          <section class="project">
+            <img src="assets/chess-zoom-3-2.jpg" alt="screenshot of chess in my terminal.">
+            <div class="info-panel">
+              <p>Chess</p>
+              <div class="project-links-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/>
+                <img src="assets/open-in-new.svg" alt="">
+              </div>
             </div>
-          </div>
-          <p class="project-description">A demonstration of full page layout using CSS grid. Front-end only project. </p>
-        </section>
-
-        <section class="project">
-          <img src="assets/sketcha-zoom-3-2.jpg" alt="screenshot of star drawn in project.">
-          <div class="info-panel">
-            <p>Sketcha Doodle</p>
-            <div class="project-links-container">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/>
-              <img src="assets/open-in-new.svg" alt="">
+            <p class="project-description">A command line Chess game where two players can play against each other. Follows common rules and implements special moves 'en passant' and 'castling'.</p>
+          </section>
+  
+          <section class="project">
+            <img src="assets/admin-dashboard-zoom-3-2.jpg" alt="screenshot of project.">
+            <div class="info-panel">
+              <p>Admin Dashboard</p>
+              <div class="project-links-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/>
+                <img src="assets/open-in-new.svg" alt="">
+              </div>
             </div>
+            <p class="project-description">A demonstration of full page layout using CSS grid. Front-end only project. </p>
+          </section>
+  
+          <section class="project">
+            <img src="assets/sketcha-zoom-3-2.jpg" alt="screenshot of star drawn in project.">
+            <div class="info-panel">
+              <p>Sketcha Doodle</p>
+              <div class="project-links-container">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/>
+                <img src="assets/open-in-new.svg" alt="">
+              </div>
+            </div>
+            <p class="project-description">A very basic drawing application. My first Javascript project. </p>
+          </section>
+        </div>
+      </div>
+  
+      <div class="contact-container">
+        <div class="contact">
+          <h1>Contact Me</h1>
+          
+          <p>Please get in touch if you think our work could be mutually beneficial!</p>
+          <div class="tele">
+            <img src="assets/phone.svg" alt="telephone icon">
+            <p>586-909-8180</p>
           </div>
-          <p class="project-description">A very basic drawing application. My first Javascript project. </p>
-        </section>
+          <class class="email">
+            <img src="assets/email-outline.svg" alt="email icon">
+            <p>nikkibrusoe@gmail.com</p>
+          </class>
+          <p>Currently residing in San Diego, CA</p>
+          <div class="contact-links">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt=""/>
+          </div>
+        </div>
+        <picture>
+          <source media="(max-width: 833px)" srcset="assets/nikki-workstation-crop-tall.jpg">
+          <source media="(min-width: 834px)" srcset="assets/nikki-workstation-crop-landscape.jpg">
+          <img src="nikki-workstation-crop-landscape.jpg" alt="Nikki sitting in front of her desk smiling at the camera" class="nikki-workstation">
+        </picture>
       </div>
     </div>
-
-    <div class="contact">
-      <h1>Contact Me</h1>
-      
-      <p>Please get in touch if you think our work could be mutually beneficial!</p>
-      <div class="tele">
-        <img src="assets/phone.svg" alt="telephone icon">
-        <p>586-909-8180</p>
-      </div>
-      <class class="email">
-        <img src="assets/email-outline.svg" alt="email icon">
-        <p>nikkibrusoe@gmail.com</p>
-      </class>
-      <p>San Diego, California</p>
-      <div class="contact-links">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt=""/>
-      </div>
-    </div>
-    <img class="my-photo" src="assets/placeholder2.jpg" alt="">
+    
   </body>
 </html>
