@@ -23,17 +23,16 @@ h1 {
 }
 
 .blue-div {
-  height: 600px;
-  width: 2400px;
+  height: 320px;
+  width: 1800px;
   position: absolute;
-  transform: rotate(-25deg);
-  top: -180px;
-  right: -80px;
+  transform: rotate(-10deg) translatey(-220px) translatex(-30px);
   background: #233556;
   z-index: -1;
 }
 
 .about {
+  position: relative;
   color: #e9ebee;
   padding: 30px;
   display: flex;
@@ -42,10 +41,33 @@ h1 {
   z-index: 4;
 }
 
-.nikki-outside {
+.img-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.img-container picture {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
   height: 400px;
   width: auto;
-  z-index: 5;
+}
+
+.nikki-outside {
+  height: 100%;
+}
+
+.my-name {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  align-self: end;
+  padding: 0 0 5px 5px;
+  font-family: 'Roboto Slab', serif;
+  color: #f7f7f7;
+  font-size: 60px;
+  width: 200px;
+  line-height: 1.1;
+  text-shadow: 1px 1px 2px rgba(0,0,0, 0.25);
 }
 
 .about section {
@@ -53,7 +75,7 @@ h1 {
   color: black;
   background: #f7f7f7;
   padding: 15px;
-  max-width: 600px;
+  max-width: 550px;
   display: flex;
   flex-flow: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -207,7 +229,7 @@ h1 {
 
 @media (min-width: 601px) {
   .nikki-outside {
-    height: 250px;
+    height: 300px;
   }
 }
 
