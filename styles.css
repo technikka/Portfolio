@@ -136,18 +136,24 @@ h1 {
   }
 
   .my-name {
-
-  }
-
-  .work {
-    
+    width: max-content;
+    padding-left: 0;
+    justify-self: center;
+    font-size: 52px;
   }
 
   .work h1 {
     align-self: start;
+    padding-left: calc((100% - 900px - 100px) / 2);
   }
 
 }
+
+
+
+
+
+
 
 
 .work {
@@ -340,6 +346,7 @@ h1 {
   .work h1 {
     padding-top: 30px;
     align-self: start;
+    padding-left: calc((100% - 600px - 50px) / 2);
   }
 }
 
