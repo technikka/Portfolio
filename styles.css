@@ -167,6 +167,7 @@ h1 {
 }
 
 .contact-container {
+  margin-top: 25px;
   background: #9f4e4c;
   display: flex;
   flex-flow: row wrap;
@@ -234,10 +235,12 @@ h1 {
   width: auto;
 }
 
+.contact-container picture {
+  max-width: 360px;
+}
+
 .nikki-workstation {
   width: 100%;
-  max-width: 412px;
-  height: auto;
 }
 
 @media (min-width: 701px) and (max-width: 1050px) {
@@ -340,11 +343,11 @@ h1 {
 
 }
 
-@media (min-width: 655px) {
+@media (min-width: 718px) {
   .nikki-workstation {
     padding: 30px;
-    max-height: 351px; 
-    width: auto;
+    max-height: 351px;
+    object-fit: contain;
   }
 
   .contact-links {
@@ -353,6 +356,14 @@ h1 {
   
   .contact h1 {
     align-self: flex-start;
+  }
+}
+
+@media (min-width:834px) {
+  .contact-container picture {
+    padding-top: 30px;
+    max-height: 330px;
+    width: auto;
   }
 }
 
