@@ -31,19 +31,27 @@ h1 {
   z-index: -1;
 }
 
-.about {
-  position: relative;
+.about-container {
   color: #e9ebee;
   padding: 30px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about {
+  color: #e9ebee;
+  padding: 30px;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  justify-content: center;
   z-index: 4;
 }
 
 .img-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  justify-content: center;
 }
 
 .img-container picture {
@@ -71,23 +79,27 @@ h1 {
 }
 
 .about section {
-  align-self: center;
+  padding: 15px;
+  justify-self: center;
   color: black;
   background: #f7f7f7;
-  padding: 15px;
-  max-width: 550px;
   display: flex;
   flex-flow: column;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  max-width: 270px;
+  box-shadow: none;
+}
+
+.about section h1 {
+  margin: auto;
 }
 
 .about-links {
-  align-self: flex-end;
-  margin-top: auto;
+  margin: auto;
 }
 
 .about-links img {
   height: 30px;
+  padding: 0 5px;
 }
 
 .work {
@@ -231,14 +243,51 @@ h1 {
   .img-container picture  {
     height: 300px;
     width: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   }
 
-  .my-name {
-
+  .about {
+    height: 400px;
+    width: 600px;
+    display: block;
+    position: relative;
   }
 
   .about section {
+    display: block;
+    position: absolute;
+    top: 100px;
+    margin-left: 30px;
+    height: 350px;
+    max-width: 500px; 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: -1;
+  }
 
+  .img-container {
+    float: left;
+  }
+
+  .hidden-shape {
+    float: left;
+    background: blue;
+    width: 275px;
+    height: 230px;
+    background: #f7f7f7; 
+  }
+
+  .about-links {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
+  }
+
+  .my-name {
+    position: absolute;
+    width: 400px;
+    top: 30px;
+    right: 12px;
   }
 }
 
@@ -256,17 +305,9 @@ h1 {
   .contact h1 {
     align-self: flex-start;
   }
-}
 
-@media (max-width: 600px) {
-  .about section {
-    max-width: 270px;
-    box-shadow: none;
-  }
-
-  .about-links {
-    align-self: center;
-    margin-top: auto;
+  .about section h1 {
+    margin-left: 0;
   }
 }
 
