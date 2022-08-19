@@ -102,60 +102,6 @@ h1 {
   padding: 0 5px;
 }
 
-
-
-
-
-
-@media (min-width: 1001px) {
-  .about-container {
-    justify-content: start;
-  }
-
-  .about {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .about section {
-    max-width: 100%;
-    max-height: 70%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    align-self: center;
-  }
-
-  .img-container {
-    justify-content: end;
-  }
-
-  .img-container picture  {
-    height: 350px;
-  }
-
-  .about-links {
-    margin-right: 0;
-  }
-
-  .my-name {
-    width: max-content;
-    padding-left: 0;
-    justify-self: center;
-    font-size: 52px;
-  }
-
-  .work h1 {
-    align-self: start;
-    padding-left: calc((100% - 900px - 100px) / 2);
-  }
-
-}
-
-
-
-
-
-
-
-
 .work {
   padding: 0 0 30px 0;
   display: flex;
@@ -167,7 +113,7 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 50px;
+  row-gap: 50px;
 }
 
 .work h1 {
@@ -178,6 +124,8 @@ h1 {
   display: flex column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: max-content;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .project img {
@@ -292,7 +240,7 @@ h1 {
   height: auto;
 }
 
-@media (min-width: 601px) and (max-width: 1000px) {
+@media (min-width: 701px) and (max-width: 1050px) {
   .img-container picture  {
     height: 300px;
     width: auto;
@@ -350,6 +298,48 @@ h1 {
   }
 }
 
+@media (min-width: 1051px) {
+  .about-container {
+    justify-content: start;
+  }
+
+  .about {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .about section {
+    max-width: 100%;
+    max-height: 70%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    align-self: center;
+  }
+
+  .img-container {
+    justify-content: end;
+  }
+
+  .img-container picture  {
+    height: 350px;
+  }
+
+  .about-links {
+    margin-right: 0;
+  }
+
+  .my-name {
+    width: max-content;
+    padding-left: 0;
+    justify-self: center;
+    font-size: 52px;
+  }
+
+  .work h1 {
+    align-self: start;
+    padding-left: calc((100% - 900px - 100px) / 2);
+  }
+
+}
+
 @media (min-width: 655px) {
   .nikki-workstation {
     padding: 30px;
@@ -364,10 +354,6 @@ h1 {
   .contact h1 {
     align-self: flex-start;
   }
-
-  .about section h1 {
-    margin-left: 0;
-  }
 }
 
 @media (min-width: 1100px) {
@@ -375,7 +361,7 @@ h1 {
     width: calc((100vw - 1100px) / 2);
     height: 100vh;
     /* background-color: #f7f7f7; */
-    background-color: #f5eded;
+    background-color: #20100f;
     display: block;
     position: fixed;
     top: 0;
@@ -388,7 +374,7 @@ h1 {
     height: 100vh;
     z-index: 5;
     /* background-color: #f7f7f7; */
-    background-color: #f5eded;
+    background-color: #20100f;
     display: block;
     position: fixed;
     top: 0;
