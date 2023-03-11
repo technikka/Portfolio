@@ -1,9 +1,16 @@
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'kanit';
+  font-weight: 300;
   display: flex;
   justify-content: center;
   overflow-x: hidden;
+}
+
+a > img:hover {
+  transform: scale(1.2);
+  filter: invert(59%) sepia(13%) saturate(1364%) hue-rotate(133deg) brightness(91%) contrast(89%); 
 }
 
 .page-container {
@@ -233,6 +240,7 @@ h1 {
 .contact-links img {
   height: 30px;
   width: auto;
+  filter: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(7481%) hue-rotate(228deg) brightness(106%) contrast(106%);
 }
 
 .contact-container picture {
