@@ -4,4 +4,6 @@ This was a project I completed during an advanced CSS course. It's a single stat
 
 I keep this project updated to showcase my work.
 
+Projects with a backend are not currently available to view live as they were hosted at Heroku before their free tier hosting service was scrapped. I will be getting them back up asap.
+
 View it live: [My Portfolio](https://technikka.github.io/Portfolio/)
