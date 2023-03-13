@@ -166,10 +166,21 @@ h1 {
 .project-description {
   margin: 0;
   padding: 0 15px 15px 15px;
-  display: block;
+  display: grid;
+  align-items: center;
   width: 270px;
-  height: auto;
+  height: calc(100% - 260px);
   overflow-wrap: break-word;
+}
+
+.project-description p {
+  margin: 10px 0;
+  height: min-content;
+}
+
+.project-description .bottom {
+  align-self: end;
+  margin: 10px 0 20px 0;
 }
 
 span.bold {
