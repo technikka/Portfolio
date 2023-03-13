@@ -167,7 +167,7 @@ h1 {
   margin: 0;
   padding: 0 15px 15px 15px;
   display: grid;
-  align-items: center;
+  align-items: baseline;
   width: 270px;
   height: calc(100% - 260px);
   overflow-wrap: break-word;
