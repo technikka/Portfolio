@@ -1,9 +1,30 @@
-# My Portfolio
+# Portfolio
 
-This was a project I completed during an advanced CSS course. It's a single static page highlighting my best work. It's fully responsive and desktop, tablet, and mobile views each have their own design. The designs were provided by the course over at [The Odin Project](https://www.theodinproject.com/lessons/advanced-html-and-css-personal-portfolio).
+My portfolio as a full stack developer, showcasing my best work and the technologies I'm comfortable with. 
 
-I keep this project updated to showcase my work.
+I built this during an advanced CSS course. The designs were provided by the course over at [The Odin Project](https://www.theodinproject.com/lessons/advanced-html-and-css-personal-portfolio).
 
-Projects with a backend are not currently available to view live as they were hosted at Heroku before their free tier hosting service was scrapped. I will be getting them back up asap.
 
-View it live: [My Portfolio](https://technikka.github.io/Portfolio/)
+### Accessing My Portfolio
+
+Check it out here: [Portfolio](https://technikka.github.io/Portfolio/)
+
+
+## Technologies used
+
+* CSS3
+* HTML5
+
+
+## Description
+
+My personal portfolio, a single static page, highlighting my work as a developer. Some features include:
+
+* A fully responsive design. Desktop, tablet, and mobile views each have their own layout.
+
+* Use of the HTML <Picture> element, allowing for different images of me to be used depending on the size of the device. This creates a nice aesthetic using an appropriate crop of an image.
+
+* Each project stands out as its own card.
+
+* Each card includes a screenshot, a general description, a technical description, a quick list of technologies used, and links to the project's website and repository.
+
