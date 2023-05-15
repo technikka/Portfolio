@@ -1,13 +1,13 @@
 # Portfolio
 
-My portfolio as a full stack developer, showcasing my best work and the technologies I'm comfortable with. 
+My portfolio as a full stack developer, showcasing my best work and the technologies I'm most comfortable with. 
 
 I built this during an advanced CSS course. The designs were provided by the course over at [The Odin Project](https://www.theodinproject.com/lessons/advanced-html-and-css-personal-portfolio).
 
 
 ### Accessing My Portfolio
 
-Check it out here: [Portfolio](https://technikka.github.io/Portfolio/)
+Check it out here: [Portfolio | Nikki Brusoe](https://www.nikkibrusoe.com)
 
 
 ## Technologies used
