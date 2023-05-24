@@ -8,7 +8,7 @@ body {
 
 a > img:hover {
   transform: scale(1.2);
-  filter: invert(59%) sepia(13%) saturate(1364%) hue-rotate(133deg) brightness(91%) contrast(89%); 
+  filter: brightness(0) saturate(100%) invert(19%) sepia(66%) saturate(3319%) hue-rotate(169deg) brightness(105%) contrast(97%);
 }
 
 .page-container {
@@ -34,7 +34,7 @@ h1 {
   width: 1800px;
   position: absolute;
   transform: rotate(-10deg) translatey(-220px) translatex(-30px);
-  background: #9f4e4c;
+  background: #7e0f04;
   z-index: -1;
 }
 
@@ -190,7 +190,7 @@ span.bold {
 
 .contact-container {
   margin-top: 25px;
-  background: #9f4e4c;
+  background: #7e0f04;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -245,17 +245,12 @@ span.bold {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  align-self: center;
-}
-
-.contact h1 {
-  align-self: center;
 }
 
 .contact-links img {
   height: 30px;
   width: auto;
-  filter: brightness(0) saturate(100%) invert(0%) sepia(5%) saturate(7481%) hue-rotate(228deg) brightness(106%) contrast(106%);
+  filter: brightness(0) saturate(100%) invert(100%);
 }
 
 .contact-container picture {
@@ -297,7 +292,6 @@ span.bold {
 
   .hidden-shape {
     float: left;
-    background: blue;
     width: 275px;
     height: 230px;
     background: #f7f7f7; 
@@ -394,8 +388,7 @@ span.bold {
   .side-panel-left {
     width: calc((100vw - 1100px) / 2);
     height: 100vh;
-    /* background-color: #f7f7f7; */
-    background-color: #20100f;
+    background-color: #2a2a2e;
     display: block;
     position: fixed;
     top: 0;
@@ -407,8 +400,7 @@ span.bold {
     width: calc((100vw - 1100px) / 2);
     height: 100vh;
     z-index: 5;
-    /* background-color: #f7f7f7; */
-    background-color: #20100f;
+    background-color: #2a2a2e;
     display: block;
     position: fixed;
     top: 0;
