@@ -1,318 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,  initial-scale=1.0">
-    <meta
-      name="description"
-      content="The personal portfolio of Nikki Brusoe, full-stack software developer."
-    />
+    <meta name="description" content="The personal portfolio of Nikki Brusoe, full-stack software developer." />
     <meta name="author" content="Nikki Brusoe (technikka)">
-    <meta property="og:image" content="https://www.nikkibrusoe.com/assets/nikki-workstation-crop-landscape-og-image.jpg" />
+    <meta property="og:image"
+        content="https://www.nikkibrusoe.com/assets/nikki-workstation-crop-landscape-og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://www.nikkibrusoe.com" />
     <meta property="og:title" content="Portfolio | Nikki Brusoe" />
-    <meta property="og:description" content="The personal portfolio of Nikki Brusoe, full-stack software developer."/>  
+    <meta property="og:description"
+        content="The portfolio of Nikki Brusoe, a software engineer exploring procedural generation, artificial life, simulation architecture, and emergent systems." />
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
-    <title>Portfolio | Nikki Brusoe</title> 
-  </head>
+    <title>Nikki Brusoe | Software Engineer</title>
+</head>
 
-  <body>
+<body>
     <div class="page-container">
 
-      <div class="side-panel-left"></div>
-      <div class="top-deco"></div>
-      <div class="side-panel-right"></div>
+        <div class="side-panel-left"></div>
+        <div class="top-deco"></div>
+        <div class="side-panel-right"></div>
 
-      <div class="about-container">
-        <div class="about">
-          <div class="img-container">
-            <picture>
-              <source media="(max-width: 700px)" srcset="assets/nikki-outside-crop-tall.jpeg">
-              <source media="(min-width: 701px)" srcset="assets/nikki-outside-crop-square.jpeg">
-              <img src="nikki-outside-crop-square.jpeg" alt="Nikki standing outside and smiling" class="nikki-outside">
-            </picture>
-            <h1 class="my-name">Nikki Brusoe</h1>
-          </div>
-
-          <section>
-            <div class="hidden-shape"></div>
-            <h1>About Me</h1>
-            <p>I'm a self-taught software developer
-            driven by a passion for learning many different technologies, using them to solve interesting and challenging problems, and ultimately having a positive impact on society. 
-            <br /> <br />
-            I'm always looking for opportunities to grow, as a human and towards my goal of becoming a high-quality engineer. My current focus is on mastering practical object-oriented design to create highly efficient, maintainable and scalable code.</p>
-            <div class="about-links">
-              <a href="https://github.com/technikka/" target="_blank" rel="noopener noreferrer">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" alt="github cat icon"/></a>
-              <a href="https://www.linkedin.com/in/nikki-brusoe-89108722a/" target="_blank" rel="noopener noreferrer">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" title="LinkedIn" alt="linkedIn icon"/></a>
-              <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
-                <img src="icons/pdf-icon.svg" title="Resume" alt="pdf file icon"/></a>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div class="work">
-        <h1>My Work</h1>
-
-        <div class="projects-container">
-          <section class="project">
-            <img src="assets/abnormelodies-api-code-zoom-3-2.png" alt="screenshot of method in abnormelodies codebase.">
-            <div class="info-panel">
-              <p>abnormelodies - API</p>
-              <div class="project-links-container">
-                <a href="https://github.com/technikka/Abnormelodies_API_README" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github cat icon"/></a>
-                <a href="https://abnormelodies.com" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt="open in new tab icon"></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>
-                A melody generator. It's endpoint accepts parameters such as key, time signature, register range, note durations and augmentations to allow, etc., and responds with musicXML describing a melody. 
-              </p> 
-              <p>
-                A fast and creative Rails API, ready to be scaled into a publically available and useful tool.
-              </p>
-              <p class="bottom">
-                <span class="bold">Tech</span>: Ruby, Rails, musicXML, PostgreSQL, Nokogiri
-              </p>
-            </div>
-          </section>
-
-          <section class="project">
-            <img src="assets/abnormelodies-ui-zoom-crop-3-2.png" alt="screenshot of app form.">
-            <div class="info-panel">
-              <p>abnormelodies - UI</p>
-              <div class="project-links-container">
-                <a href="https://github.com/technikka/Abnormelodies_UI" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github cat icon"/></a>
-                <a href="https://abnormelodies.com" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt="open in new tab icon"></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>
-                A playground for creating unusual and sometimes hilarious melodies, using the abnormelodies API. This UI is meant to be inspiring, fun, accessible, and educational. 
-              </p> 
-              <p>
-                A React app featuring custom Material UI components, ToneJs for audio and OpenSheetMusicDisplay for visual notation of the melody.
-              </p>
-              <p class="bottom">
-                <span class="bold">Tech</span>: React, Material UI, ToneJs, OpenSheetMusicDisplay, Axios, reCAPTCHA
-              </p>
-            </div>
-          </section>
-
-          <section class="project">
-            <img src="assets/pp-zoom-3-2.jpg" alt="screenshot of people pages newsfeed.">
-            <div class="info-panel">
-              <p>People Pages</p>
-              <div class="project-links-container">
-                <a href="https://github.com/technikka/PeoplePages" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github cat icon"/></a>
-                <a href="https://people-pages.onrender.com" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt="open in new tab icon"></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>
-                A social platform mimicking the core user functionality of Facebook: users, profiles, posts, newsfeed, "friending", and "liking".
-              </p> 
-              <p>
-                This project exhibits a full scale CRUD app with complex associations and database queries, and authentication.
-              </p>
-              <p class="bottom">
-                <span class="bold">Tech</span>: Ruby on Rails, Turbo, Tailwind CSS, PostgreSQL, Devise
-              </p>
-            </div>
-          </section>
-
-          <section class="project">
-            <img src="assets/chess-zoom-3-2.jpg" alt="screenshot of chess in my terminal.">
-            <div class="info-panel">
-              <p>Chess</p>
-              <div class="project-links-container">
-                <a href="https://github.com/technikka/Chess" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github cat icon"/></a>
-                <a href="https://replit.com/@technikka/Chess" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt="open in new tab icon"></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>
-                Command line game for two users to play against each other. Players can execute special moves like 'en passant' and 'castling', and recieve helpful tips when trying to make an illegal move. Games are savable with serialization.
-              </p> 
-              <p>
-                This code is my finest example of object oriented programming and design, comprising 19 beautifully SOLID classes.
-              </p>
-              <p class="bottom">
-                <span class="bold">Tech</span>: Ruby, YAML
-              </p>
-            </div>
-          </section>
-
-          <section class="project">
-            <img src="assets/wheres_waldo_3-2_zoom_crop.jpg" alt="screenshot of gameplay.">
-            <div class="info-panel">
-              <p>Where's Waldo</p>
-              <div class="project-links-container">
-                <a href="https://github.com/technikka/WheresWaldo" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github cat icon"/></a>
-                <a href="https://wheres-waldo-76r5.onrender.com/exhibits" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt="open in new tab icon"></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>
-                An interactive implementation of the classic puzzle books. Features 3 exhibits of increasing difficulty, each with 4 characters to find and a timer to beat.
-              </p>
-              <p>
-                This code displays the possibility of using vanilla JS to make AJAX calls to a Rails backend.
-              </p>
-              <p class="bottom">
-                <span class="bold">Tech</span>: Ruby on Rails, Javascript, PostgreSQL, AJAX
-              </p>
-            </div>
-          </section>
-
-          <section class="project">
-            <img src="assets/shopping_cart_3-2_shop.jpg" alt="screenshot of in-app overview">
-            <div class="info-panel">
-              <p>Shopping Cart </p>
-              <div class="project-links-container">
-                <a href="https://github.com/technikka/ShoppingCart_Ps5Place" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/></a>
-                <a href="https://technikka.github.io/ShoppingCart_Ps5Place/" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt=""></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>A demonstration of shopping cart functionality. Employing the power of React's state, props, and hooks— it dynamically and smoothly updates items in cart, total quantities and costs for items, or removal of items. It also practices strict verification on order limits.</p>
-              <p class="bottom">
-                <span class="bold">Tech</span>: React, CSS
-              </p>
-            </div>
-          </section>
-
-          <section class="project">
-            <img src="assets/doist-3-2.png" alt="screenshot of in-app overview">
-            <div class="info-panel">
-              <p>Do-ist Task Manager</p>
-              <div class="project-links-container">
-                <a href="https://github.com/technikka/DoistTodoList" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/></a>
-                <a href="https://technikka.github.io/DoistTodoList/" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt=""></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>
-                A task management application featuring sorting functions and expanding/collapsing views of tasks.
-              </p>
-              <p>
-                This code is an accomplishment in using ES6 Modules with Webpack to transform unwieldy vanilla JS into a nice representation of the Single Responsibility Principle.
-              </p>
-              <p class="bottom">
-                <span class="bold">Tech</span>: Javascript, Webpack, HTML, CSS, LocalStorage
-              </p>
-            </div>
-          </section>
-
-          <section class="project">
-            <img src="assets/memory-game-zoom-3-2.jpg" alt="screenshot of in-app overview">
-            <div class="info-panel">
-              <p>Memory Card Game</p>
-              <div class="project-links-container">
-                <a href="https://github.com/technikka/MemoryCardGame" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt=""/></a>
-                <a href="https://technikka.github.io/MemoryCardGame/" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt=""></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>Test your memory abilities here by trying to click each of the 12 images once and only once. The cards are shuffled after each click, and score is kept with current score and best score per browser session. </p>
-              <p class="bottom">
-                <span class="bold">Tech</span>: React, CSS
-              </p>
-            </div>
-          </section>
-
-          <section class="project">
-            <img src="assets/cv-app-zoom-3-2.png" alt="screenshot of CV Application.">
-            <div class="info-panel">
-              <p>CV Application</p>
-              <div class="project-links-container">
-                <a href="https://github.com/technikka/CvApplication" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github cat icon"/></a>
-                <a href="https://technikka.github.io/CvApplication/" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt=""></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>
-                A demonstration of funtionality for submitting a CV. Users can add, update, and delete experience items individually to build their CV before submitting the whole.
-              </p>
-              <p class="bottom">
-                <span class="bold">Tech</span>: React, CSS
-              </p>
-            </div>
-          </section>
-
-          <section class="project">
-            <img src="assets/admin-dashboard-zoom-3-2.jpg" alt="screenshot of project.">
-            <div class="info-panel">
-              <p>Admin Dashboard</p>
-              <div class="project-links-container">
-                <a href="https://github.com/technikka/AdminDashboard" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github cat icon"/></a>
-                <a href="https://technikka.github.io/AdminDashboard/" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt="Open in new tab icon"></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>
-                A demonstration of full page layout using CSS grid. The layout was provided and replicated exactly. The design was closely followed with some personal touches like colors, images, font, etc.
-              </p> 
-              <p class="bottom">
-                <span class="bold">Tech</span>: HTML, CSS
-              </p>
-            </div>
-          </section>
-
-          <section class="project">
-            <img src="assets/portfolio-3-2-zoom-crop.png" alt="screenshot of project.">
-            <div class="info-panel">
-              <p>Portfolio</p>
-              <div class="project-links-container">
-                <a href="https://nikkibrusoe.com" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github cat icon"/></a>
-                <a href="" target="_blank" rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt="Open in new tab icon"></a>
-              </div>
-            </div>
-            <div class="project-description">
-              <p>
-                This fully responsive portfolio surely deserves a spot here! Desktop, tablet, and mobile each have their own full design.
-              </p>
-              <p class="bottom">
-                <span class="bold">Tech</span>: HTML, CSS
-              </p>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div class="contact-container">
-        <div class="contact">
-          <h1>Contact Me</h1>
-          
-          <p>Please get in touch if you think our work could be mutually beneficial!</p>
-          <div class="tele">
-            <img src="assets/phone.svg" alt="telephone icon">
-            <p>586-909-8180</p>
-          </div>
-          <class class="email">
-            <img src="assets/email-outline.svg" alt="email icon">
-            <p>nikkibrusoe@gmail.com</p>
-          </class>
-          <p>Currently residing in San Diego, CA</p>
-          <div class="contact-links">
-            <a href="https://github.com/technikka/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" alt="github cat icon"/></a>
-            <a href="https://www.linkedin.com/in/nikki-brusoe-89108722a/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" title="LinkedIn" alt="linkedIn icon"/></a>
-            <a href="resume.pdf" target="_blank" rel="noopener noreferrer"><img src="icons/pdf-icon.svg" title="Resume" alt="pdf file icon"/></a>
-          </div>
+        <div class="portfolio-banner">
+            <strong>A Note About This Portfolio</strong>
+            This portfolio showcases the projects that shaped my journey as a self-taught software engineer. My current
+            work has shifted toward procedural generation, simulation, artificial life, and emergent systems through my
+            ongoing project, Mossworld.
         </div>
 
-        <picture>
-          <source media="(max-width: 833px)" srcset="assets/nikki-workstation-crop-tall-2.jpg">
-          <source media="(min-width: 834px)" srcset="assets/nikki-workstation-crop-landscape.jpg">
-          <img src="nikki-workstation-crop-landscape.jpg" alt="Nikki sitting in front of her desk smiling" class="nikki-workstation">
-        </picture>
-      </div>
+        <div class="about-container">
+            <div class="about">
+                <div class="img-container">
+                    <h1 class="my-name">Nikki Brusoe</h1>
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="assets/nikki-brusoe-profile.jpg">
+                        <source media="(min-width: 701px)" srcset="assets/nikki-brusoe-profile-square.jpg">
+                        <img src="nikki-outside-crop-square.jpeg" alt="Nikki standing outside and smiling"
+                            class="nikki-outside">
+                    </picture>
+                    <div class="about-links">
+                        <a href="https://github.com/technikka/" target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                title="GitHub" alt="github cat icon" /></a>
+                        <a href="https://www.linkedin.com/in/nikki-brusoe-89108722a/" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
+                                title="LinkedIn" alt="linkedIn icon" /></a>
+                    </div>
+                </div>
+
+                <section>
+                    <p>
+                        I'm a self-taught software engineer who is as passionate about complex systems as I am about
+                        designing the architectures that make those systems easier to express, evolve, and reason about
+                        over time. My current work explores procedural generation, simulations, artificial life, and
+                        emergent
+                        behavior.
+                        <br><br>
+                        What began as an interest in programming gradually became an interest in modeling worlds. I'm
+                        especially drawn to curiosity-driven software that invites exploration rather than simply
+                        providing answers. Whether the medium is music, games, or simulated ecosystems, I enjoy
+                        designing systems that feel alive through the interactions of their individual parts.
+                        <br><br>
+                        Today I'm focused on completing my Computer Science degree while working on Mossworld, a cozy
+                        artificial life simulation written in modern C++. Through it, I'm exploring the
+                        intersection of simulation architecture, agent behavior, and emergent systems.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+        <div class="work">
+            <h1>Selected Projects</h1>
+
+            <div class="projects-container">
+                <section class="project">
+                    <img src="assets/abnormelodies-api.png" alt="screenshot of method in abnormelodies codebase.">
+                    <div class="info-panel">
+                        <p>Abnormelodies API</p>
+                        <div class="project-links-container">
+                            <a href="https://github.com/technikka/Abnormelodies_API" target="_blank"
+                                rel="noopener noreferrer"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="github cat icon" /></a>
+                            <a href="https://abnormelodies.com" target="_blank" rel="noopener noreferrer"><img
+                                    src="assets/open-in-new.svg" alt="open in new tab icon"></a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            A procedural melody generation engine that transforms musical constraints into original
+                            melodies and fully notated MusicXML.
+                        </p>
+                        <p>
+                            Built while teaching myself Ruby, this project became a deep exploration of
+                            procedural generation, rule-based systems, and object-oriented architecture. It was the
+                            project where I first recognized the kind of software I most enjoy building.
+                        </p>
+                        <p class="bottom">
+                            <span class="tech">Tech</span>: <span class="tech-stack">Ruby, Rails, MusicXML, PostgreSQL,
+                                Nokogiri</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <img src="assets/abnormelodies-ui-crop.jpg" alt="screenshot of app form.">
+                    <div class="info-panel">
+                        <p>Abnormelodies UI</p>
+                        <div class="project-links-container">
+                            <a href="https://github.com/technikka/Abnormelodies_UI" target="_blank"
+                                rel="noopener noreferrer"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="github cat icon" /></a>
+                            <a href="https://abnormelodies.com" target="_blank" rel="noopener noreferrer"><img
+                                    src="assets/open-in-new.svg" alt="open in new tab icon"></a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            An interactive React playground for exploring procedurally generated melodies through
+                            notation, browser-based playback, and guided music theory.
+                        </p>
+                        <p>
+                            Designed to compliment the Abnormelodies API, this interface turned a procedural generation
+                            engine into an accessible, creative, and educational experience.
+                        </p>
+                        <p class="bottom">
+                            <span class="tech">Tech</span>: <span class="tech-stack">
+                                React, ToneJs, OpenSheetMusicDisplay, Material UI, Axios,
+                                reCAPTCHA
+                            </span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <img class="chess-img" src="assets/chess.jpg" alt="screenshot of chess in my terminal.">
+                    <div class="info-panel">
+                        <p>Chess</p>
+                        <div class="project-links-container">
+                            <a href="https://github.com/technikka/Chess" target="_blank" rel="noopener noreferrer"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="Github cat icon" /></a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            A command-line implementation of chess focused on object-oriented design, rule modeling, and
+                            comprehensive move validation.
+                        </p>
+                        <p>
+                            Built to explore how a complex ruleset can be expressed through clear domain modeling and
+                            maintainable software architecture.
+                        </p>
+                        <p class="bottom">
+                            <span class="tech">Tech</span>: <span class="tech-stack">Ruby, YAML</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <img src="assets/pp-zoom-3-2.jpg" alt="screenshot of people pages newsfeed.">
+                    <div class="info-panel">
+                        <p>People Pages</p>
+                        <div class="project-links-container">
+                            <a href="https://github.com/technikka/PeoplePages" target="_blank"
+                                rel="noopener noreferrer"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="github cat icon" /></a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            A social networking application implementing user profiles, posts, comments, friendships,
+                            and personalized newsfeeds.
+                        </p>
+                        <p>
+                            Built to explore relational data modeling, authentication, and organizing complex CRUD
+                            behavior within a full-stack Rails application.
+
+                        </p>
+                        <p class="bottom">
+                            <span class="tech">Tech</span>: <span class="tech-stack">Ruby on Rails, Turbo, Tailwind CSS,
+                                PostgreSQL, Devise</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <img src="assets/wheres_waldo_3-2_zoom_crop.jpg" alt="screenshot of gameplay.">
+                    <div class="info-panel">
+                        <p>Where's Waldo</p>
+                        <div class="project-links-container">
+                            <a href="https://github.com/technikka/WheresWaldo" target="_blank"
+                                rel="noopener noreferrer"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="github cat icon" /></a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            An interactive implementation of the classic puzzle books featuring progressively
+                            challenging scenes, character tracking, and timer-based gameplay.
+                        </p>
+                        <p>
+                            Built to explore DOM manipulation, asynchronous Rails communication with vanilla JavaScript,
+                            and managing interactive game state without a frontend framework.
+                        </p>
+                        <p class="bottom">
+                            <span class="tech">Tech</span>: <span class="tech-stack">Ruby on Rails, Javascript,
+                                PostgreSQL, AJAX</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="project">
+                    <img src="assets/doist-3-2.png" alt="screenshot of in-app overview">
+                    <div class="info-panel">
+                        <p>Do-ist Task Manager</p>
+                        <div class="project-links-container">
+                            <a href="https://github.com/technikka/DoistTodoList" target="_blank"
+                                rel="noopener noreferrer"><img
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    alt="" /></a>
+                            <a href="https://technikka.github.io/DoistTodoList/" target="_blank"
+                                rel="noopener noreferrer"><img src="assets/open-in-new.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            A task management application featuring hierarchical organization, dynamic sorting, and
+                            expandable task views.
+                        </p>
+                        <p>
+                            Built to explore modular frontend architecture using ES6 Modules and Webpack while
+                            organizing complex client-side behavior into maintainable, single-purpose components.
+                        </p>
+                        <p class="bottom">
+                            <span class="tech">Tech</span>: <span class="tech-stack">Javascript, Webpack, HTML, CSS,
+                                LocalStorage</span>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact">
+                <h1>Let's Connect</h1>
+                <p>I'm interested in opportunities involving complex systems, simulation, artificial life, and emergent
+                    behavior. If you think we might be a good fit to build together, I'd love to hear from you.
+                </p>
+
+                <div class="email">
+                    <img src="assets/email-outline.svg" alt="">
+                    <span>nikkibrusoe@gmail.com</span>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>

@@ -1,30 +1,31 @@
 # Portfolio
 
-My portfolio as a full stack developer, showcasing my best work and the technologies I'm most comfortable with. 
+My personal portfolio, showcasing projects that shaped my growth as a self-taught software engineer and the direction my work is taking today.
 
-I built this during an advanced CSS course. The designs were provided by the course over at [The Odin Project](https://www.theodinproject.com/lessons/advanced-html-and-css-personal-portfolio).
+The site serves as both a portfolio and a snapshot of my evolving interests, from full-stack web development to procedural generation, simulation, artificial life, and emergent systems.
 
+### Visit
 
-### Accessing My Portfolio
+**https://www.nikkibrusoe.com**
 
-Check it out here: [Portfolio | Nikki Brusoe](https://www.nikkibrusoe.com)
+---
 
+## Features
 
-## Technologies used
+- Responsive layout for desktop, tablet, and mobile.
+- Project cards featuring screenshots, descriptions, technologies, and repository/live links.
+- Custom About section highlighting my current engineering focus.
+- Semantic HTML with a lightweight, static implementation requiring no framework.
 
-* CSS3
-* HTML5
+---
 
+## Technologies
 
-## Description
+- HTML5
+- CSS3
 
-My personal portfolio, a single static page, highlighting my work as a developer. Some features include:
+---
 
-* A fully responsive design. Desktop, tablet, and mobile views each have their own layout.
+## Design
 
-* Use of the HTML <Picture> element, allowing for different images of me to be used depending on the size of the device. This creates a nice aesthetic using an appropriate crop of an image.
-
-* Each project stands out as its own card.
-
-* Each card includes a screenshot, a general description, a technical description, a quick list of technologies used, and links to the project's website and repository.
-
+This portfolio was originally built during the Advanced HTML & CSS curriculum at **The Odin Project**. While the initial layout began from the course design, it has since been substantially rewritten, redesigned, and updated to better reflect my work, interests, and engineering direction.

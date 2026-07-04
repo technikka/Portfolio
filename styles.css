@@ -1,411 +1,606 @@
 body {
-  margin: 0;
-  font-family: 'fira sans';
-  font-weight: 300;
-  display: flex;
-  justify-content: center;
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
 }
 
-a > img:hover {
-  transform: scale(1.2);
-  filter: brightness(0) saturate(100%) invert(19%) sepia(66%) saturate(3319%) hue-rotate(169deg) brightness(105%) contrast(97%);
+a>img:hover {
+    transform: scale(1.2);
+    filter: invert(42%) sepia(8%) saturate(1558%) hue-rotate(72deg) brightness(92%) contrast(88%);
 }
 
 .page-container {
-  max-width: 1100px;
-  position: relative;
-  overflow-x: clip;
+    max-width: 1100px;
+    position: relative;
+    overflow-x: clip;
 }
 
 .side-panel-left {
-  display: none;
+    display: none;
 }
 
 .side-panel-right {
-  display: none;
+    display: none;
 }
 
 h1 {
-  margin: 0;
+    margin: 0;
 }
 
 .top-deco {
-  height: 320px;
-  width: 1800px;
-  position: absolute;
-  transform: rotate(-10deg) translatey(-220px) translatex(-30px);
-  background: #7e0f04;
-  z-index: -1;
+    height: 320px;
+    width: 1800px;
+    position: absolute;
+    transform: rotate(-10deg) translatey(-220px) translatex(-30px);
+    background: #4F7350;
+    z-index: -1;
+}
+
+.portfolio-banner {
+    width: 1200px;
+    max-width: 90%;
+    margin: 25px auto 30px;
+
+    padding: 14px 20px;
+
+    background: #f8f8f8;
+    box-shadow: rgba(0, 0, 0, .15) 0 2px 6px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.45;
+    color: #2d2d2d;
+
+    box-sizing: border-box;
+}
+
+.portfolio-banner strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .about-container {
-  color: #e9ebee;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about {
-  color: #e9ebee;
-  padding: 30px;
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  justify-content: center;
-  z-index: 4;
+    color: #e9ebee;
+    padding: 60px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-container {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img-container picture {
-  grid-row: 1 / 3;
-  grid-column: 1 / 2;
-  height: 400px;
-  width: auto;
-}
-
-.nikki-outside {
-  height: 100%;
-}
-
-.my-name {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-  align-self: end;
-  padding: 0 0 5px 5px;
-  font-family: 'Roboto Slab', serif;
-  color: #f7f7f7;
-  font-size: 60px;
-  width: 200px;
-  line-height: 1.1;
-  text-shadow: 2px 2px 3px rgba(0,0,0, 0.4);
+    height: 400px;
+    width: auto;
 }
 
 .about section {
-  padding: 15px;
-  justify-self: center;
-  color: black;
-  background: #f7f7f7;
-  display: flex;
-  flex-flow: column;
-  max-width: 270px;
-  box-shadow: none;
+    padding: 15px;
+    justify-self: center;
+    color: black;
+    display: flex;
+    flex-flow: column;
+    max-width: 270px;
+    box-shadow: none;
 }
 
 .about section h1 {
-  margin: auto;
+    margin: auto;
 }
 
 .about-links {
-  margin: auto;
-  padding: 7px;
+    margin: 10px 0 0 0;
+    padding: 7px;
 }
 
 .about-links img {
-  height: 30px;
-  padding: 0 5px;
+    height: 40px;
+    padding: 0 10px;
 }
 
 .work {
-  padding: 0 0 30px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.projects-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  row-gap: 50px;
+    padding: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .work h1 {
-  padding-bottom: 15px;
+    padding-bottom: 24px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 42px;
+    max-width: 980px;
+    width: 100%;
 }
 
 .project {
-  display: flex column;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: max-content;
-  margin-left: 25px;
-  margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.10) 0 4px 14px;
+    transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .project img {
-  width: 300px;
-  height: 200px;
-  object-fit: fill;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.chess-img {
+    object-fit: contain !important;
+    background: #363636;
+}
+
+.project:hover {
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0, .16) 0 10px 24px;
 }
 
 .info-panel {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 18px 20px 8px 20px;
 }
 
 .info-panel p {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
-  padding: 15px;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
 
 .project-links-container {
-  padding-right: 20px;
-  margin-left: auto;
+    margin-left: auto;
+    padding-left: 16px;
 }
 
 .project-links-container img {
-  height: 20px;
-  width: auto;
-  padding-left: 5px;
+    height: 18px;
+    width: auto;
+    padding-left: 8px;
 }
 
 .project-description {
-  margin: 0;
-  padding: 0 15px 15px 15px;
-  display: grid;
-  align-items: baseline;
-  width: 270px;
-  height: calc(100% - 260px);
-  overflow-wrap: break-word;
+    padding: 0 20px 22px 20px;
+    width: auto;
+    height: auto;
+    overflow-wrap: break-word;
+    line-height: 1.45;
 }
 
 .project-description p {
-  margin: 10px 0;
-  height: min-content;
+    margin: 12px 0;
 }
 
 .project-description .bottom {
-  align-self: end;
-  margin: 10px 0 20px 0;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.tech {
+    color: #777;
+    font-weight: 500;
+}
+
+.tech-stack {
+    color: #222;
 }
 
 span.bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .contact-container {
-  margin-top: 25px;
-  background: #7e0f04;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+    margin-top: 25px;
+    background: #4F7350;
+    display: flex;
+    justify-content: center;
 }
 
 .contact {
-  padding: 30px;
-  color: #e9ebee;
-  display: flex;
-  flex-direction: column;
+    padding: 60px 30px;
+    color: #e9ebee;
+    text-align: center;
+    max-width: 560px;
+}
+
+.contact h1 {
+    margin: 0 0 10px 0;
+}
+
+.contact h2 {
+    margin: 0 0 22px 0;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 .contact p {
-  margin: 0;
-  padding-top: 10px;
-  max-width: 300px;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.tele {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 10px;
-  padding: 20px 0 5px 0;
-}
-
-.tele img {
-  width: 20px;
-  height: auto;
-  filter: invert(1);
-}
-
-.email img {
-  width: 20px;
-  height: auto;
-  filter: invert(1);
+    margin: 0 auto 24px auto;
+    max-width: 520px;
+    line-height: 1.45;
 }
 
 .email {
-  height: max-content;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 10px;
-  padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+}
+
+.email img {
+    width: 22px;
+    height: auto;
+    filter: invert(1);
 }
 
 .contact-links {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .contact-links img {
-  height: 30px;
-  width: auto;
-  filter: brightness(0) saturate(100%) invert(100%);
-}
-
-.contact-container picture {
-  max-width: 360px;
-}
-
-.nikki-workstation {
-  width: 100%;
+    height: 20px;
+    width: auto;
+    filter: brightness(0) saturate(100%) invert(100%);
 }
 
 @media (min-width: 701px) and (max-width: 1050px) {
-  .img-container picture  {
-    height: 300px;
-    width: auto;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-  }
+    .img-container picture {
+        height: 300px;
+        width: auto;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
 
-  .about {
-    height: 400px;
-    width: 600px;
-    display: block;
-    position: relative;
-  }
+    .about {
+        height: 400px;
+        width: 600px;
+        display: block;
+        position: relative;
+    }
 
-  .about section {
-    display: block;
-    position: absolute;
-    top: 100px;
-    margin-left: 30px;
-    height: 350px;
-    max-width: 500px; 
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    z-index: -1;
-  }
+    .about section {
+        display: block;
+        position: absolute;
+        top: 100px;
+        margin-left: 30px;
+        height: 350px;
+        max-width: 500px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        z-index: -1;
+    }
 
-  .img-container {
-    float: left;
-  }
+    .img-container {
+        float: left;
+    }
 
-  .hidden-shape {
-    float: left;
-    width: 275px;
-    height: 230px;
-    background: #f7f7f7; 
-  }
+    .hidden-shape {
+        float: left;
+        width: 275px;
+        height: 230px;
+        background: #f7f7f7;
+    }
 
-  .about-links {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    bottom: 15px;
-    padding-right: 15px;
-  }
+    .about-links {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+        padding-right: 15px;
+    }
 
-  .my-name {
-    position: absolute;
-    width: 400px;
-    top: 30px;
-    right: 12px;
-  }
+    .my-name {
+        position: absolute;
+        width: 400px;
+        top: 30px;
+        right: 12px;
+    }
 
-  .work h1 {
-    padding-top: 30px;
-    align-self: start;
-    padding-left: calc((100% - 600px - 50px) / 2);
-  }
+    .work h1 {
+        padding-top: 30px;
+        align-self: start;
+        padding-left: calc((100% - 600px - 50px) / 2);
+    }
 }
 
 @media (min-width: 1051px) {
-  .about-container {
-    justify-content: start;
-  }
+    .work h1 {
+        align-self: start;
+        padding-left: calc((100% - 900px - 100px) / 2);
+    }
 
-  .about {
-    grid-template-columns: 1fr 2fr;
-  }
+    .about {
+        align-items: flex-start;
+    }
 
-  .about section {
-    max-width: 100%;
-    max-height: 70%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    align-self: center;
-  }
+    .about {
+        color: #e9ebee;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        z-index: 4;
+    }
 
-  .img-container {
-    justify-content: end;
-  }
+    .img-container {
+        flex: 0 0 420px;
+    }
 
-  .img-container picture  {
-    height: 350px;
-  }
+    .about section {
+        flex: 1;
+    }
 
-  .about-links {
-    margin-right: 0;
-  }
+    .img-container picture {
+        height: 400px;
+    }
 
-  .my-name {
-    width: max-content;
-    padding-left: 0;
-    justify-self: center;
-    font-size: 52px;
-  }
+    .nikki-outside {
+        height: 100%;
+        width: auto;
+        display: block;
+    }
 
-  .work h1 {
-    align-self: start;
-    padding-left: calc((100% - 900px - 100px) / 2);
-  }
+    .my-name {
+        position: static;
+        width: auto;
+        padding: 14px 0 0 0;
+        text-shadow: none;
+        line-height: 1;
+        margin: 0 0 26px 0;
 
+        font-size: 3.2rem;
+        font-weight: 500;
+        font-family: inherit;
+        color: #4F7350;
+    }
+
+    .about section {
+        max-height: none;
+        max-width: none;
+        padding: 40px;
+        align-self: start;
+    }
 }
 
 @media (min-width: 718px) {
-  .nikki-workstation {
-    padding: 30px;
-    max-height: 351px;
-    object-fit: contain;
-  }
 
-  .contact-links {
-    align-self: flex-start;
-  }
-  
-  .contact h1 {
-    align-self: flex-start;
-  }
+    .contact-links {
+        align-self: flex-start;
+    }
+
+    .contact h1 {
+        align-self: flex-start;
+    }
 }
 
 @media (min-width:834px) {
-  .contact-container picture {
-    padding-top: 30px;
-    max-height: 330px;
-    width: auto;
-  }
+    .contact-container picture {
+        padding-top: 30px;
+        max-height: 330px;
+        width: auto;
+    }
 }
 
 @media (min-width: 1100px) {
-  .side-panel-left {
-    width: calc((100vw - 1100px) / 2);
-    height: 100vh;
-    background-color: #2a2a2e;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 5;
-  }
+    .side-panel-left {
+        width: calc((100vw - 1100px) / 2);
+        height: 100vh;
+        background-color: #2a2a2e;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
 
-  .side-panel-right {
-    width: calc((100vw - 1100px) / 2);
-    height: 100vh;
-    z-index: 5;
-    background-color: #2a2a2e;
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
+    .side-panel-right {
+        width: calc((100vw - 1100px) / 2);
+        height: 100vh;
+        z-index: 5;
+        background-color: #2a2a2e;
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+
+
+/* Temporary responsive stabilization before full CSS cleanup */
+
+@media (max-width: 700px) {
+    body {
+        display: block;
+    }
+
+    .page-container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .top-deco,
+    .side-panel-left,
+    .side-panel-right {
+        display: none;
+    }
+
+    .portfolio-banner {
+        width: auto;
+        max-width: none;
+        margin: 20px;
+    }
+
+    .about-container {
+        padding: 30px 20px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 0;
+    }
+
+    .img-container picture {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .nikki-outside {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .my-name {
+        position: static;
+        width: auto;
+        text-align: center;
+        color: #4F7350;
+        font-size: 2.4rem;
+        margin-bottom: 18px;
+    }
+
+    .about section {
+        max-width: none;
+        width: 100%;
+        padding: 0;
+        color: black;
+    }
+
+    .work {
+        padding: 20px;
+    }
+
+    .work h1 {
+        align-self: center;
+        padding: 0 0 24px 0;
+        text-align: center;
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 32px;
+    }
+
+    .project img {
+        height: auto;
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+    }
+
+    .contact {
+        padding: 50px 20px;
+    }
+
+    .email {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1050px) {
+    body {
+        display: block;
+    }
+
+    .page-container {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .top-deco {
+        display: block;
+    }
+
+    .about-container {
+        padding: 40px 20px;
+    }
+
+    .about {
+        width: auto;
+        max-width: 700px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+        padding: 0;
+        gap: 24px;
+    }
+
+    .img-container {
+        float: none;
+    }
+
+    .img-container picture {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+    }
+
+    .nikki-outside {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .my-name {
+        position: static;
+        width: auto;
+        text-align: center;
+        color: #4F7350;
+        margin-bottom: 18px;
+    }
+
+    .about section {
+        position: static;
+        height: auto;
+        max-width: 620px;
+        margin-left: 0;
+        padding: 24px;
+        z-index: auto;
+    }
+
+    .about-links {
+        position: static;
+        display: block;
+        padding: 7px;
+    }
+
+    .projects-container {
+        width: calc(100% - 40px);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px;
+    }
+
+    .work h1 {
+        align-self: center;
+        padding: 30px 0 24px 0;
+        text-align: center;
+    }
 }
