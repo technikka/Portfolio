@@ -230,6 +230,20 @@ span.bold {
     line-height: 1.45;
 }
 
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.email img {
+    width: 22px;
+    height: auto;
+    filter: invert(1);
+    flex-shrink: 0;
+}
+
 @media (min-width: 701px) and (max-width: 1050px) {
     .img-container picture {
         height: 300px;
@@ -397,10 +411,16 @@ span.bold {
         overflow-x: hidden;
     }
 
-    .top-deco,
     .side-panel-left,
     .side-panel-right {
         display: none;
+    }
+
+    .top-deco {
+        display: block;
+        width: 1400px;
+        height: 320px;
+        transform: rotate(-10deg) translateY(-215px) translateX(-140px);
     }
 
     .portfolio-banner {
@@ -474,12 +494,6 @@ span.bold {
     .contact {
         padding: 50px 20px;
     }
-
-    .email {
-        flex-wrap: wrap;
-    }
-
-
 }
 
 @media (min-width: 701px) and (max-width: 1050px) {
