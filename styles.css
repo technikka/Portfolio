@@ -135,7 +135,7 @@ h1 {
     transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.project img {
+.project>img {
     width: 100%;
     height: 240px;
     object-fit: cover;
@@ -224,43 +224,10 @@ span.bold {
     margin: 0 0 10px 0;
 }
 
-.contact h2 {
-    margin: 0 0 22px 0;
-    font-size: 1.25rem;
-    font-weight: 500;
-}
-
 .contact p {
     margin: 0 auto 24px auto;
     max-width: 520px;
     line-height: 1.45;
-}
-
-.email {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    padding: 0;
-}
-
-.email img {
-    width: 22px;
-    height: auto;
-    filter: invert(1);
-}
-
-.contact-links {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.contact-links img {
-    height: 20px;
-    width: auto;
-    filter: brightness(0) saturate(100%) invert(100%);
 }
 
 @media (min-width: 701px) and (max-width: 1050px) {
@@ -290,13 +257,6 @@ span.bold {
 
     .img-container {
         float: left;
-    }
-
-    .hidden-shape {
-        float: left;
-        width: 275px;
-        height: 230px;
-        background: #f7f7f7;
     }
 
     .about-links {
@@ -506,10 +466,9 @@ span.bold {
         gap: 32px;
     }
 
-    .project img {
+    .project>img {
         height: auto;
-        aspect-ratio: 3 / 2;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     .contact {
@@ -519,6 +478,8 @@ span.bold {
     .email {
         flex-wrap: wrap;
     }
+
+
 }
 
 @media (min-width: 701px) and (max-width: 1050px) {
@@ -603,4 +564,12 @@ span.bold {
         padding: 30px 0 24px 0;
         text-align: center;
     }
+}
+
+.project-links-container img {
+    height: 18px;
+    width: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    display: inline-block;
 }
